@@ -11,10 +11,8 @@ class InvoicesController extends Controller
     {
         $invoices = Invoice::all();
 
-        return view('invoices.index',[
-            'invoices'=>$invoices
 
-        ]);
+        return view('invoices.index',compact('invoices'));
     }
 
     public function create()

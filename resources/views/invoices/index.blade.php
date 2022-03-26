@@ -23,7 +23,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                        @foreach ($invoices as $invoice)
+                        @foreach ($invoices) as $invoice)
                         <tr>
                             <th scope="row">{{$invoice->id}}</th>
                             <td>{{$invoice->number}}</td>
